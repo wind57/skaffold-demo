@@ -1,0 +1,9 @@
+1. Assuming kind is already installed, so:
+
+    kind create cluster --wait 5m
+
+2. chmod +x build.sh
+
+3. skaffold build --file-output=images.json
+
+4. skaffold deploy --build-artifacts=images.json
